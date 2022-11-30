@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="p">
+	<select id="product_list" resultType="product">
+		select * from product order by pidx desc
+	</select>
+	
+	<!-- 상품추가 -->
+	<insert id="product_insert" parameterType="product">
+		insert into product values(
+			seq_pidx.nextVal,
+			#{pmainimg},
+			#{psubimg1},
+			#{psubimg2},
+			#{psubimg3},
+			#{psubimg4},
+			#{psubimg5},
+			#{psubimg6},
+			#{psubimg7},
+			#{psubimg8},
+			#{psubimg9},
+			#{psubimg10},
+			#{pname},
+			#{pprice},
+			#{pcountry},
+			#{pperiod},
+			#{pcheck},
+			#{pair},
+			#{pmove},
+			#{paccount},
+			#{pschedule},
+			#{photel},
+			#{ptotcount},
+			#{prescount},
+			#{psparecount},
+			#{pdibc}
+		)
+	</insert>
+	<!-- 상품 삭제 -->
+	<delete id="product_delete"  parameterType="String">
+		delete from product where pidx = #{pidx}
+	</delete>
+	<!-- 상품수정을 위해 정보 한 건 조회 -->
+	<select id="product_one" resultType="product" parameterType="String">
+		select * from product where pidx = #{pidx}
+	</select>
+	<!-- 상품 수정 -->
+	<update id="product_update" parameterType="product">
+		update product set
+			pmainimg = #{pmainimg},
+			psubimg1 = #{psubimg1},
+			psubimg2 = #{psubimg2},
+			psubimg3 = #{psubimg3},
+			psubimg4 = #{psubimg4},
+			psubimg5 = #{psubimg5},
+			psubimg6 = #{psubimg6},
+			psubimg7 = #{psubimg7},
+			psubimg8 = #{psubimg8},
+			psubimg9 = #{psubimg9},
+			psubimg10 = #{psubimg10},
+			pname = #{pname},
+			pprice = #{pprice},
+			pcountry = #{pcountry},
+			pperiod = #{pperiod},
+			pcheck = #{pcheck},
+			pair = #{pair},
+			pmove = #{pmove},
+			paccount = #{paccount},
+			pschedule = #{pschedule},
+			photel = #{photel},
+			ptotcount = #{ptotcount},
+			prescount = #{prescount},
+			psparecount = #{psparecount},
+			pdibc = #{pdibc}
+			where pidx = #{pidx}
+	</update>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="u">	
+	<!-- 아이디 중복체크 & 로그인 확인 -->
+	<select id="id_check_selectOne" parameterType="string" resultType="user">
+		select * from "user" where "uid"=#{uId}
+	</select>
+	
+	<!-- 회원가입 -->
+	<insert id="user_insert" parameterType="user">
+		insert into "user" values(seq_uidx.nextVal, 
+								  #{uname}, 
+								  #{uid}, 
+								  #{upwd},
+								  #{upostcode},
+								  #{uroadAddress},
+								  #{ujibunAddress},
+							      #{udetailAddress},
+								  #{uextraAddress},
+								  #{uphone},
+								  #{uemail},
+								  #{ubirth})
+	</insert>
+	
+	<!-- 아이디 찾기 -->	
+	<select id="find_id_selectOne" parameterType="user" resultType="user">
+		select * from "user" where uname=#{uname} and ubirth=#{ubirth} and uphone=#{uphone}
+	</select>
+	
+	<!-- 비밀번호 찾기 -->
+	<select id="find_pwd_selectOne" parameterType	="user" resultType="user">
+		select * from "user" where "uid"=#{uid} and uname=#{uname} and ubirth=#{ubirth} and uphone=#{uphone}
+	</select>
+	
+	<!-- 비밀번호 찾기 -> 변경 -->
+	<update id="change_pwd" parameterType="String">
+		update "user" set upwd = #{upwd} where "uid" = #{uid}
+	</update>
+	
+	<!-- 마이페이지의 예약한 상품목록, 문의내역 불러오기 -->
+	<select id="Order_list" parameterType="String" resultType="vo.MyPageVO">
+		SELECT * FROM PRODUCT p, contact c 
+		WHERE p.PIDX = (SELECT pidx FROM "order" WHERE uidx = (SELECT uidx FROM "user" WHERE uidx = #{uidx}) 
+		and c."uid" = (SELECT "uid" FROM "user" WHERE uidx = #{uidx}))
+	</select>
+	
+	<!-- 마이페이지 -> 회원정보 수정 눌렀을 때 -->
+	<select id="user_selectOne" parameterType="String" resultType="user">
+		select * from "user" where uidx = #{uidx}
+	</select>
+	
+	<!-- 회원정보 수정 -->
+	<update id="userModify" parameterType="user">
+		update "user" set uname = #{uname}, uphone = #{uphone} where uidx = #{uidx}
+	</update>
+	
+	<!-- 회원정보 수정 -> 비밀번호 변경 -->
+	<update id="changePwd">
+		update "user" set upwd = #{upwd} where uidx = #{uidx}
+	</update>
+	
+	<!-- 회원 탈퇴 -->
+	<delete id="userDelete" parameterType="String">
+		delete from "user" where uidx = #{uidx} 
+	</delete>
+	
+	<!-- 관리자페이지 회원관리 -->
+	<select id="memManage_list" resultType="user">
+		select * from "user" order by uidx desc
+	</select>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
