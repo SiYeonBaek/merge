@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+
+		 
+	<!-- 파라미터를 받는 생성자 :  SawonDAO sawon_dao = new SawonDAO(sqlSessionBean); -->
+	<!-- <bean id="visit_daoBean" class="dao.VisitDAO">
+		setter로 만들었기 떄문에 property가 필요하다...
+			 생성자로 만들었을때는 constructor-arg가 필요함.!
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean> -->
+	<bean id="user_daoBean" class="dao.UserDAO">
+		<constructor-arg name="sqlSession" ref="sqlSessionBean"/>
+	</bean>
+	<bean id="product_daoBean" class="dao.ProductDAO">
+		<constructor-arg name="sqlSession" ref="sqlSessionBean"/>
+	</bean>
+
+</beans>

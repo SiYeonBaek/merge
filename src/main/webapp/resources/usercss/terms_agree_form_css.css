@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0}
+	ul{list-style: none;}
+	span{color: #0daa62}
+	textarea {
+		width: 580px; 
+		height: 300px;
+		font-size: 14.5px;
+		resize: none;
+		overflow:auto;
+	}
+	.content {
+		/* border: 1px solid black; */
+		margin: 0px auto;
+		width: 600px;
+		height: 2000px;
+	}
+	
+	.content .allSelectBox {
+		border-bottom: 1px solid #bbb;
+	    width: 580px;
+	    padding: 20px 0 20px 20px; 
+	}
+	
+	.content .allSelectBox ul li label {
+		color: #0daa62;
+	    font-weight: bold;
+	    font-size: 20px;
+	    margin-left: 10px;
+	}
+	
+	.subText {
+		width: 580px;
+		padding: 20px 0 5px 20px;
+		font-size: 15px;
+		color: #0daa62;
+	}
+	
+	.terms_agree_start {
+	    width: 580px;
+	    padding: 10px 0 0 20px;
+	}
+	
+	.terms_agree_start ul li a {
+		color: gray;
+		text-decoration-line: none;
+		font-size: 13px;
+	}
+	
+	.terms_agree_start ul li a:hover {
+		color: black;
+		text-decoration-line: none;
+		font-size: 15px;
+	}
+	
+	.terms_agree_start ul li {
+		margin-bottom: 10px; 
+	}
+	
+	.subText2 {
+		width: 580px;
+		padding: 20px 0 5px 20px;
+		font-size: 15px;
+	}
+	
+	.btn_area {
+		/* border: 1px solid black; */
+		width: 600px;
+		padding: 30px 0 0 0;
+		text-align: center;
+	}
+	
+	.agree_yes_btn, .agree_no_btn {
+		width: 230px;
+   		padding: 17px 0px;
+   		font-size: 15px;
+   		font-weight: bold;
+	}
+	
+	.agree_yes_btn {
+		border: 1px solid #0daa62;
+		background-color: #0daa62;
+		color: white;
+		margin-right: 10px;
+	}
+	
+	.agree_yes_btn:hover {
+		background-color: #0B6121;
+	}
+	
+	.agree_no_btn {
+		border: 1px solid #BDBDBD;
+		background-color: #BDBDBD;
+		color: white;
+	}
+	
+	.agree_no_btn:hover {
+		background-color: #585858;
+	}
+	
+	

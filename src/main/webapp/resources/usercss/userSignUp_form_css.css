@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+	ul{list-style: none;}
+	
+	h1{margin: 50px auto 0;
+	text-align: center;
+	}
+	
+	.textArea {
+		/* border: 1px solid green; */
+		margin: 50px auto 0;
+		padding: 0 0 30px 0;
+		width:800px;
+		border-bottom: 1px solid #bbb;
+	}
+	
+	.infoText {
+		text-align: center;
+		margin-left: 100px; 
+		font-weight: bold;
+		padding: 11px 0 16px 10px;
+		width: 130px;
+		display: inline-block;
+	}
+	
+	.infoBox {
+		width: 800px;
+		margin: 0 auto 10px;
+		padding: 30px 0;
+	}
+	
+	.infoBox ul li {
+		/* border: 1px solid blue; */
+		border-bottom: 1px solid #E6E6E6;
+		padding: 5px 0;
+		width: 800px;
+	}
+	
+	input[type=text], input[type=password] {
+		text-align: left;
+   		width: 300px;
+   		padding: 15px 80px 15px 10px;
+   		border: none;
+	}
+	
+	.infoBox ul li input[type=button] {
+		margin: 6px 12px auto 10px;
+		border-radius: 5px;
+		font-size: 10px;
+		padding: 10px 20px;
+		width: 130px;
+		float: right;
+		border: none;
+		background-color: #BDBDBD;
+	}
+	
+	.infoBox ul li input[type=button]:hover {
+		background-color: #848484;
+	}
+	
+	input[type=text]:focus, input[type=password]:focus {
+		outline: none;
+	}
+	
+	
+	input:focus + .under-bar .color{
+	    background-color: #18701f;
+	    left: 50%;
+	    width: 0px;
+	    height: 3px;
+	    animation: progres 1s linear forwards;        
+	}
+	
+	.under-bar{
+	    height: 3px;
+	    width: 390px;
+	    background-color: #828282;
+	    margin: 0 248px 0;
+	    
+	}
+	
+	@keyframes progres{
+	    0%{
+	      width: 0%;
+	      left: 50%;
+	    }
+	    25%{
+	        width: 50%;
+	        left: 25%;
+	    }
+	    50%{
+	        width: 75%;
+	        left: 12.5%;
+	    }
+	    75%{
+	        width: 85%;
+	        left: 7.5%;
+	    }
+	    100%{
+	        width: 100%;
+	        left: 0%;
+	    }
+    }
+    
+    .btnArea {
+    	/* border: 1px solid red; */
+    	width: 800px;
+    	margin: 0px auto 50px;
+    	height: 150px;
+    	text-align: center;
+    }
+    
+    .btnArea input {
+    	width: 230px;
+    	padding: 10px 10px;
+    	margin: 0px auto;
+    	border: none;
+    	border-radius: 5px;
+    }
+    
+    .btnArea input:nth-child(1) {
+    	margin-right: 20px;
+    	background-color: #81F781;
+    }
+    
+    .btnArea input:nth-child(2) {
+    	background-color: #BDBDBD;
+  	}
+  	
+  	.btnArea input:nth-child(1):hover {
+    	margin-right: 20px;
+    	background-color: #01DF3A;
+    }
+    
+    .btnArea input:nth-child(2):hover {
+    	background-color: #848484;
+  	}
+    
+    .addr {
+    	/* border: 1px solid blue; */
+    	margin-left: 245.7px;	
+    }
+    
+    .addrArea input {
+    	margin-bottom: 5px;
+    	border: 1px solid gray;
+    	width: 300px;
+    }
+};

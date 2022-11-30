@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+	* {margin: 0; padding: 0;}
+	ul {list-style: none;}
+	
+	.loginTextBox {
+		width: 1100px;
+		margin: 0px auto 30px;
+		padding: 0px 0px;
+		text-align: center;
+	}
+	
+	.loginArea {
+		margin: 0 auto;	
+		width: 1100px;
+		text-align: center;
+		height: 500px;
+	}
+	
+	.loginBox {
+		margin: 0 auto;
+		/* border: 1px solid red; */
+		width: 500px;
+		height: 305px;
+	}
+	
+	.loginBox input[type=text], input[type=password] {
+		margin-bottom: 5px;
+		border: 2px solid gray;
+		border-radius: 8px;
+		padding: 20px 0 20px 60px;
+		width: 80%;
+	}
+	
+	.loginBox input[type=button] {
+		width: 92.5%;
+		padding: 20px 30px;
+		font-size: 15px;
+		border-radius: 3px;
+	}
+	
+	.loginBox .loginBtn {
+		margin: 10px auto 10px;
+		display: block;
+		border: 1px solid #81F781;
+		background-color: #81F781;
+	}
+	
+	.loginBox .backBtn {
+		border: 1px solid #E6E6E6;
+		background-color: #E6E6E6;
+	}
+	
+	.loginBox .loginBtn:hover {
+		border: 1px solid #01DF3A;
+		background-color: #01DF3A;
+		font-weight: bold;
+	}
+	
+	.loginBox .backBtn:hover {
+		border: 1px solid #BDBDBD;
+		background-color: #BDBDBD;
+		font-weight: bold;
+	}
+	
+	input::placeholder {
+	  color: black;
+	}
+		
+	
+	input[type=text], input[type=password] {
+		opacity: 0.5;
+	}
+		
+	.loginBox .idBox input{
+		background-image: url('../img/id.png');
+		background-repeat: no-repeat;
+		background-size: 32px;
+		background-position: 12px center;
+	}
+	 
+	.loginBox .pwdBox input{
+		background-image: url('../img/password.png');
+		background-repeat: no-repeat;
+		background-size: 32px;
+		background-position: 12px center;
+	}
+	
+	.findBox {
+		/* border: 1px solid lime; */
+		width: 500px;
+		height: 100px;
+		float: left;
+		margin: 10px auto;
+		font-size: 12px;
+		color: gray;
+	}
+	
+	.findBox a{
+		text-decoration-line: none;
+		color: inherit;
+	}
+	
+	.findBox a:hover{
+		font-weight: bold;
+		color: black;
+	}
+	
+	
+	
+	
+	

@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+.main {
+	margin: 30px 0;
+	float: left;
+	width:80%;
+	height: 965px;
+}
+
+.content {
+	border: 1px solid gray;
+	height: 90%;
+	width: 100%;
+}
+
+.info_img {
+	border: 1px solid pink;
+	width: 100%;
+	height: 340px;
+}
+
+.info_text {
+	
+	border: 1px solid yellow;
+	width: 100%;
+	height: 380px;
+}
+
+.txt_style {
+	margin: 50px 0; 
+}
+
+.txt_style label {
+	margin: 0px 50px;
+	font-size: large;
+	font-weight: bold;
+}
+.txt_style input[type=text] {
+	border: none;
+	border-bottom: 2px solid gray;
+	font-size: large;
+}
+
+.txt_style input[type=text]:hover {
+	border: none;
+	border-bottom: 2px solid gray;
+	font-size: large;
+}
+
+.txt_lng {
+	border: 1px solid skyblue;
+	float: left;
+	width: 100%;
+	height: 25%;
+}
+
+.txt_left {
+	border: 1px solid skyblue;
+	float: left;
+	width: 49%;
+	height: 25%;
+		
+}
+
+.txt_right {
+	border: 1px solid #131313;
+	float: right;
+	width: 49%;
+	height: 25%;
+}
+
+.txt_long {
+	border: 1px solid coral;
+	width: 100%;
+	height: 50%;
+	margin-top: 190px;
+}
+
+.txt_lng .txt_style input[type=text] {
+	border: none;
+	border-bottom: 2px solid gray;
+	font-size: large;
+	width: 1100px;
+	margin: 0 70px;
+	float: right;
+}
+
+
+.txt_right .txt_style input[type=text] {
+	border: none;
+	border-bottom: 2px solid gray;
+	font-size: large;
+	width: 400px;
+    margin: 0 30px;
+	float: right;
+}
+
+.txt_left .txt_style input[type=text] {
+	border: none;
+	border-bottom: 2px solid gray;
+	font-size: large;
+	width: 400px;
+    margin: 0 30px;
+	float: right;
+}
+
+.txt_long .txt_style input[type=text] {
+	border: none;
+	border-bottom: 2px solid gray;
+	font-size: large;
+	width: 1100px;
+	margin: 0 70px;
+	float: right;
+}
+
+.info_btn {
+	border: 1px solid blue;
+	width: 100%;
+	height: 144px;
+}
+
+.profil_box {
+	border: 1px solid green;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+
+.info_page {
+	border: 1px solid gray;
+	width: 100%;
+	height: 20%;
+}
+.info_page>h2 {
+	margin: 18px 30px;
+}
+
+.profile_img {
+	border: 1px solid red;
+	width : 25%;
+	height: 70%;
+	margin-top: 40px;
+}
+
+.btn_mod {
+	padding: 20px 30px;
+	border: none;
+    background-color: #424242;
+    color: white;
+}
+
+.btn_action {
+	text-align: center;
+    line-height: 140px;
+    height: 140px;
+    
+}

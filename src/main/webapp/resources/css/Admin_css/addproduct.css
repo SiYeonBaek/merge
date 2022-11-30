@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.main {
+	margin: 30px 0;
+	float: left;
+	width:80%;
+	height: 965px;
+}
+
+.content {
+	border: 1px solid gray;
+	height: 90%;
+}
+
+.product_btn {
+	margin: 5px;
+	padding: 5px;
+}
+
+.btn {
+	float: right;
+	margin: 10px;
+	padding: 5px;
+}
+
+.btn_mod {
+	background-Color: white;
+    font: 12px 굴림;
+    border: none;
+    font-weight: bold;
+    color: gray;
+}
+
+.product_add {
+	margin-top: 50px;
+}

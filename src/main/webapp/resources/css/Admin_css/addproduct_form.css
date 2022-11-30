@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.main {
+	margin: 30px 0;
+	float: left;
+	width:80%;
+	height: 965px;
+}
+
+.content {
+	border: 1px solid gray;
+	height: 90%;
+	width: 100%;
+}
+
+h1 {
+	margin : 50px 80px;
+}
+
+.product_all {
+	margin : 50px 50px;
+}
+
+.product_content {
+	display: flex;
+}
+
+.add {
+	display: flex;
+}
+
+.add>input {
+	margin: 5px 0;
+}
+
+.add1 {
+	border: 1px solid lightgray;
+	width: 190px;
+	margin: 5px 0;
+}
+
+label {
+	font-size: 1rem;
+}
+
+.form_add {
+	float: left;
+	margin: 5px 0;
+}
+
+.form_add1 {
+	float: left;
+	width: 100%;
+	height: 450px;
+}
+
+.product_addimg {
+	float: left;
+}
+
+.btn_mg {
+	padding-top: 50px;
+}
+
+.btn_add {
+	width: 300px;
+	margin: auto;
+	display: block;
+}
+
+.btn_lf {
+	float: left;
+}
+
+.btn_rt {
+	float: right;
+}
